@@ -1,0 +1,425 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0f2ff, #f5faff);
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.header {
+  background: linear-gradient(to right, #e0f2ff, #f5faff);
+    padding: 20px 40px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo-box {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.logo-text {
+    background-color: black;
+    color: white;
+    font-style:Times New Roman
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 10px 30px;
+}
+/* =========================
+   HERO / BANNER (FIXED)
+========================= */
+.hero-banner {
+    width: 100%;
+    background: linear-gradient(120deg, #3bb2ff, #00c6fb);
+    padding: 20px 0;
+}
+
+/* INNER CONTAINER */
+.hero-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* CONTENT */
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* SMALL INTRO TEXT */
+.hero-tagline {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 14px;
+}
+
+/* MAIN TITLE */
+.hero-title {
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* CTA BUTTON */
+.hero-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: white;
+    color: #007acc;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    padding: 8px 18px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    color: orange;
+    font-weight: bold;
+}
+/* =========================
+   IMPORTANT NOTICE SECTION
+========================= */
+.notice-section {
+    padding: 40px 20px;
+}
+
+.notice-box {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-left: 6px solid #ff9800;
+    border-radius: 8px;
+    padding: 30px 35px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.notice-box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #222;
+}
+
+.notice-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.notice-box li {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.notice-box strong {
+    color: #000;
+}
+
+
+/* =========================
+   COURSES SECTION
+========================= */
+.courses-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ONLY 3 per row */
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   STACKSKILLS-STYLE COURSE CARD
+========================= */
+.modern-card {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+
+
+/* =========================
+   CARD HEADER WITH SVG WAVE
+========================= */
+.course-image {
+    position: relative;
+    height: 180px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course-image h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0;
+    z-index: 2;
+}
+
+/* SVG WAVE */
+.wave-svg {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    fill: white;
+}
+
+/* =========================
+   CARD BODY
+========================= */
+.course-content {
+    padding: 22px;
+    text-align: left;
+}
+
+/* RATING */
+.rating {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.star.filled {
+    color: #f7b500;
+}
+
+/* INSTRUCTOR */
+.instructor {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* FOOTER */
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PRICE */
+.price-pill {
+    background: #20c997;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* EXPLORE LINK */
+.explore-link {
+    color: #20c997;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* =========================
+   STACKSKILLS COLOR PALETTE
+========================= */
+.courses-container .modern-card:nth-child(1) .course-image {
+    background: linear-gradient(135deg, #38b6ff, #70e1f5);
+}
+.courses-container .modern-card:nth-child(2) .course-image {
+    background: linear-gradient(135deg, #9e65c9, #d36fcc);
+}
+.courses-container .modern-card:nth-child(3) .course-image {
+    background: linear-gradient(135deg, #ff4c6d, #ff819c);
+}
+.courses-container .modern-card:nth-child(4) .course-image {
+    background: linear-gradient(135deg, #ff4c6d, #ff819c);
+}
+.courses-container .modern-card:nth-child(5) .course-image {
+    background: linear-gradient(135deg, #ff4c6d, #ff819c);
+}
+.courses-container .modern-card:nth-child(6) .course-image {
+    background: linear-gradient(135deg, #ec6f66, #f3a183);
+}
+.courses-container .modern-card:nth-child(7) .course-image {
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7);
+}
+.courses-container .modern-card:nth-child(8) .course-image {
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+}
+.courses-container .modern-card:nth-child(9) .course-image {
+    background: linear-gradient(135deg, #66bb6a, #98ee99);
+}
+.courses-container .modern-card:nth-child(10) .course-image {
+    background: linear-gradient(135deg, #f76b1c, #fca66b);
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+.search-container {
+    margin: 30px auto 40px;
+    max-width: 400px;
+}
+
+#courseSearch {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#courseSearch:focus {
+    border-color: #20c997;
+}
+
+/* =========================
+   ABOUT / INSTRUCTOR SECTION
+========================= */
+.about-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+/* FLEX CONTAINER */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* IMAGE */
+.about-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center top; /* 👈 KEY FIX */
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* CONTENT */
+.about-content {
+    flex: 1;
+}
+
+.instructor-about {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-btn.linkedin {
+    padding: 10px 22px;
+    border-radius: 25px;
+    background-color: #0A66C2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* CENTER THE LAST (10th) CARD */
+.center-card {
+    grid-column: 2 / 3; /* places it in the middle column */
+}
+
